@@ -1,0 +1,87 @@
+    <div [formGroup]="formGroup">
+      <div class="form-group" [ngClass]="{'error': !formGroup.controls['name'].valid && formGroup.controls['name'].touched}">
+        <label for="name">Name:</label>
+        <em *ngIf="!formGroup.controls['name'].valid && formGroup.controls['name'].touched">Required</em>
+        <input formControlName="name" id="name" type="text" class="form-control" placeholder="Name..." />
+      </div>
+
+      <div class="form-group" [ngClass]="{'error': !formGroup.controls['username'].valid && formGroup.controls['username'].touched}">
+        <label for="username">Username:</label>
+        <em *ngIf="!formGroup.controls['username'].valid && formGroup.controls['username'].touched">Required</em>
+        <input formControlName="username" id="username" type="text" class="form-control" placeholder="Username..." />
+      </div>
+
+      <div class="form-group" [ngClass]="{'error': !formGroup.controls['email'].valid && formGroup.controls['email'].touched}">
+        <label for="email">Email:</label>
+        <em *ngIf="!formGroup.controls['email'].valid && formGroup.controls['email'].touched">Required</em>
+        <input formControlName="email" id="email" type="text" class="form-control" placeholder="Email..." />
+      </div>
+
+      <div class="form-group" [ngClass]="{'error': !formGroup.controls['street'].valid && formGroup.controls['street'].touched}">
+        <label for="street">Street:</label>
+        <em *ngIf="!formGroup.controls['street'].valid && formGroup.controls['street'].touched">Required</em>
+        <input formControlName="street" id="street" type="text" class="form-control" placeholder="Street..." />
+      </div>
+
+      <div class="form-group" [ngClass]="{'error': !formGroup.controls['suite'].valid && formGroup.controls['suite'].touched}">
+        <label for="suite">Suite:</label>
+        <em *ngIf="!formGroup.controls['suite'].valid && formGroup.controls['suite'].touched">Required</em>
+        <input formControlName="suite" id="suite" type="text" class="form-control" placeholder="Suite..." />
+      </div>
+
+      <div class="form-group" [ngClass]="{'error': !formGroup.controls['city'].valid && formGroup.controls['city'].touched}">
+        <label for="city">City:</label>
+        <em *ngIf="!formGroup.controls['city'].valid && formGroup.controls['city'].touched">Required</em>
+        <input formControlName="city" id="city" type="text" class="form-control" placeholder="City..." />
+      </div>
+
+      <div class="form-group" [ngClass]="{'error': !formGroup.controls['zipCode'].valid && formGroup.controls['zipCode'].touched}">
+        <label for="zipCode">Zip Code:</label>
+        <em *ngIf="!formGroup.controls['zipCode'].valid && formGroup.controls['zipCode'].touched">Required</em>
+        <input formControlName="zipCode" id="zipCode" type="text" class="form-control" placeholder="Zip Code..." />
+      </div>
+
+      <div class="form-group" [ngClass]="{'error': !formGroup.controls['lat'].valid && formGroup.controls['lat'].touched}">
+        <label for="lat">Latitude:</label>
+        <em *ngIf="!formGroup.controls['lat'].valid && formGroup.controls['lat'].touched">Required</em>
+        <input formControlName="lat" id="lat" type="text" class="form-control" placeholder="Latitude..." />
+      </div>
+
+      <div class="form-group" [ngClass]="{'error': !formGroup.controls['lng'].valid && formGroup.controls['lng'].touched}">
+        <label for="lng">Longitude:</label>
+        <em *ngIf="!formGroup.controls['lng'].valid && formGroup.controls['lng'].touched">Required</em>
+        <input formControlName="lng" id="lng" type="text" class="form-control" placeholder="Longitude..." />
+      </div>
+
+      <div class="form-group" [ngClass]="{'error': !formGroup.controls['phone'].valid && formGroup.controls['phone'].touched}">
+        <label for="phone">Phone:</label>
+        <em *ngIf="!formGroup.controls['phone'].valid && formGroup.controls['phone'].touched">Required</em>
+        <input formControlName="phone" id="phone" type="text" class="form-control" placeholder="Phone..." />
+      </div>
+
+      <div class="form-group" [ngClass]="{'error': !formGroup.controls['website'].valid && formGroup.controls['website'].touched}">
+        <label for="website">Website:</label>
+        <em *ngIf="!formGroup.controls['website'].valid && formGroup.controls['website'].touched">Required</em>
+        <input formControlName="website" id="website" type="text" class="form-control" placeholder="Website..." />
+      </div>
+
+      <div class="form-group" [ngClass]="{'error': !formGroup.controls['companyName'].valid && formGroup.controls['companyName'].touched}">
+        <label for="companyName">Company Name:</label>
+        <em *ngIf="!formGroup.controls['companyName'].valid && formGroup.controls['companyName'].touched">Required</em>
+        <input formControlName="companyName" id="companyName" type="text" class="form-control" placeholder="Company Name..." />
+      </div>
+
+      <div class="form-group" [ngClass]="{'error': !formGroup.controls['companyCatchPhrase'].valid && formGroup.controls['companyCatchPhrase'].touched}">
+        <label for="companyCatchPhrase">Company Catch Phrase:</label>
+        <em *ngIf="!formGroup.controls['companyCatchPhrase'].valid && formGroup.controls['companyCatchPhrase'].touched">Required</em>
+        <input formControlName="companyCatchPhrase" id="companyCatchPhrase" type="text" class="form-control" placeholder="Company Catch Phrase..." />
+      </div>
+
+      <div class="form-group" [ngClass]="{'error': !formGroup.controls['companyBs'].valid && formGroup.controls['companyBs'].touched}">
+        <label for="companyBs">Company Bs:</label>
+        <em *ngIf="!formGroup.controls['companyBs'].valid && formGroup.controls['companyBs'].touched">Required</em>
+        <input formControlName="companyBs" id="companyBs" type="text" class="form-control" placeholder="Company Bs..." />
+      </div>
+    </div>
+
+

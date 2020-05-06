@@ -1,0 +1,17 @@
+<div class="" style="float: left; width: 300px; margin-right: 25px; height: 480px">
+  <div class="card">
+    <h4 class="card-title card-header bg-info text-dark">{{user.name}}</h4>
+    <div class="" style="width: 300px; padding-left: 20px; padding-right: 20px">
+      <h5>Username: {{user.username}}</h5>
+      <h5>Email: {{user.email}}</h5>
+      <h5>Phone: {{user.phone}}</h5>
+    </div>
+    <hr/>
+    <div class="card-body" style="width: 300px; padding-left: 20px; padding-right: 20px">
+      <h6>Company name: {{user.company.name}}</h6>
+      <h6>Company Catchphrase: {{user.company.catchPhrase}}</h6>
+      <h6>Company Bs: {{user.company.bs}}</h6>
+    </div>
+    <button routerLink="/user/{{user.id}}" class="btn btn-primary" style="width: 100%">Details</button>
+  </div>
+</div>

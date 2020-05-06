@@ -1,0 +1,19 @@
+
+<div class="container">
+  <br/>
+    <button [disabled]="disableDetails" *ngFor="let button of getButtonArray()" (click)="setSlicer(button)" class="btn btn-primary">
+      {{button}}
+    </button>
+
+  <select class="form-control" style="width: 10%; margin-left: 1%; display: inline" #selectElement (change)="setElements(+selectElement.value)">
+    <option *ngFor="let option of options" [ngValue]="option">{{option}}</option>
+  </select>
+  <br/>
+  <br/>
+</div>
+
+<div class="container bg-light">
+  <div *ngFor="let photo of photos | visibles:slicer:elements">
+    <photo-thumbnail [photo]="photo"></photo-thumbnail>
+  </div>
+</div>

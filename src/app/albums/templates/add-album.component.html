@@ -1,0 +1,12 @@
+<div class="container">
+  <br/>
+  <h1>Add an Album here:</h1>
+  <hr/>
+  <div class="col-md-4">
+    <form autocomplete="off" (ngSubmit)="save(formGroup.value)">
+      <album-form [formGroup]="formGroup" [users]="users"></album-form>
+      <button type="submit" [disabled]="formGroup.invalid" class="btn btn-primary">Save</button>
+      <button type="button" class="btn btn-danger" style="margin-left: 1%" (click)="cancel()">Cancel</button>
+    </form>
+  </div>
+</div>

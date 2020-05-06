@@ -1,0 +1,11 @@
+<div class="">
+  <h1>Edit the photo:</h1>
+  <hr/>
+  <div class="col-md-4">
+    <form autocomplete="off" (ngSubmit)="save(formGroup.value)">
+      <photo-form [formGroup]="formGroup" [albums]="albums"></photo-form>
+      <button type="submit" class="btn btn-primary" [disabled]="formGroup.invalid">Save</button>
+      <button type="button" class="btn btn-danger" style="margin-left: 1%" (click)="cancel()">Cancel</button>
+    </form>
+  </div>
+</div>

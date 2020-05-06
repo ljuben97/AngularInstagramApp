@@ -1,0 +1,12 @@
+<div class="container">
+  <br/>
+  <h1>Add a User here</h1>
+  <hr/>
+  <div class="col-md-4">
+    <form autocomplete="off" (ngSubmit)="save(formGroup.value)">
+      <user-form [formGroup]="formGroup"></user-form>
+      <button type="submit" class="btn btn-primary" [disabled]="formGroup.invalid">Save</button>
+      <button type="button" class="btn btn-danger" style="margin-left: 1%" (click)="cancel()">Cancel</button>
+    </form>
+  </div>
+</div>
